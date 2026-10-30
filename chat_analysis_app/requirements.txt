@@ -1,0 +1,3 @@
+# Default (CPU-friendly). For CUDA 11.8 offline wheels see requirements/gpu-cu118.txt
+# and OFFLINE_GPU.md
+-r requirements/cpu.txt

@@ -1,0 +1,21 @@
+# Shared app dependencies (no CUDA toolkit pins)
+fastapi==0.115.6
+uvicorn==0.34.0
+httptools>=0.6.3
+python-dotenv>=0.13
+watchfiles>=0.13
+websockets>=10.4
+uvloop>=0.14.0; sys_platform != "win32" and platform_python_implementation != "PyPy"
+python-multipart==0.0.20
+faster-whisper==1.1.0
+ctranslate2==4.4.0
+language-tool-python==2.8.1
+setuptools>=75.0.0
+numpy==1.26.4
+httpx==0.28.1
+av==12.3.0
+tokenizers==0.20.3
+huggingface-hub==0.26.2
+onnxruntime==1.16.3
+pytest==8.3.4
+pytest-asyncio==0.25.2

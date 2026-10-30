@@ -1,0 +1,11 @@
+# Python 3.13 CPU wheelhouse (CUDA 11.8 wheels are not published for 3.13)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+faster-whisper==1.1.0
+language-tool-python==2.8.1
+setuptools>=75.0.0
+numpy>=1.26.4
+httpx==0.28.1
+pytest==8.3.4
+pytest-asyncio==0.25.2

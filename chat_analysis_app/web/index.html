@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Northline</title>
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="brand">
+      <p class="wordmark">Northline</p>
+      <p class="tagline">English speech, checked on this machine.</p>
+    </div>
+    <div class="status" id="status" data-state="loading">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="status-label" id="status-label">Loading</span>
+    </div>
+  </header>
+
+  <main id="thread" class="thread" aria-live="polite"></main>
+
+  <footer class="composer-wrap">
+    <form id="composer" class="composer" autocomplete="off">
+      <label class="sr-only" for="input">Your sentence</label>
+      <textarea
+        id="input"
+        name="text"
+        rows="2"
+        placeholder="Say a sentence or type one…"
+        disabled
+      ></textarea>
+      <div class="composer-actions">
+        <button type="button" id="mic" class="mic" aria-pressed="false" aria-label="Record" disabled>
+          <span class="mic-ring" aria-hidden="true"></span>
+          <span class="mic-label">Mic</span>
+        </button>
+        <span class="rec-timer" id="rec-timer" hidden>0:00</span>
+        <button type="submit" id="send" class="send" disabled>Send</button>
+      </div>
+    </form>
+    <p class="composer-hint" id="composer-hint">Loading the offline models…</p>
+  </footer>
+
+  <div class="sr-only" id="live" aria-live="assertive"></div>
+
+  <script type="module" src="/js/chat.js"></script>
+</body>
+</html>

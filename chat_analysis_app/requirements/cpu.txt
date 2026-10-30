@@ -1,0 +1,2 @@
+# CPU-only offline install (Linux or Windows)
+-r base.txt
